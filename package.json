@@ -1,10 +1,10 @@
 {
-  "name": "pact-ai",
+  "name": "@riflo/ryte",
   "version": "1.0.1",
   "description": "AI Git Workflow Assistant - Generate semantic commits and PRs",
   "main": "src/index.js",
   "bin": {
-    "pact": "bin/pact.js"
+    "ryte": "bin/ryte.js"
   },
   "type": "module",
   "keywords": [
@@ -18,17 +18,17 @@
   "author": "Riflo <rifloahmad@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node bin/pact.js"
+    "start": "node bin/ryte.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rifuroo/pact.git"
+    "url": "git+https://github.com/Rifuroo/ryte.git"
   },
   "bugs": {
-    "url": "https://github.com/Rifuroo/pact/issues"
+    "url": "https://github.com/Rifuroo/ryte/issues"
   },
-  "homepage": "https://github.com/Rifuroo/pact#readme"
+  "homepage": "https://github.com/Rifuroo/ryte#readme"
 }

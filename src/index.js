@@ -19,7 +19,7 @@ async function question(query) {
 // Ensure the user doesn't just hit enter for empty edits
 function editInteractively(initialText) {
     return new Promise((resolve) => {
-        const tmpFile = path.join(os.tmpdir(), `pact_edit_${Date.now()}.txt`);
+        const tmpFile = path.join(os.tmpdir(), `ryte_edit_${Date.now()}.txt`);
         fs.writeFileSync(tmpFile, initialText, "utf-8");
 
         const editor = process.env.EDITOR || "vim";
@@ -128,12 +128,12 @@ async function main() {
         await handlePR();
     } else {
         console.log(`
-\x1b[36mPACT - AI Git Workflow Assistant\x1b[0m
+\x1b[36mRYTE - AI Git Workflow Assistant\x1b[0m
 Author: Riflo
 
 Usage:
-  pact c    Generate semantic commit from staged diff
-  pact pr   Generate PR markdown description from branch commits
+  ryte c    Generate semantic commit from staged diff
+  ryte pr   Generate PR markdown description from branch commits
 
 Set GROQ_API_KEY (Free) or OPENAI_API_KEY environment variable.
         `);
