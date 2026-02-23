@@ -133,7 +133,7 @@ We believe that **every commit is a pact** between you and your future self (and
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Please see [CONTRIBUTING.md](file:///d:/pact/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+Please see [CONTRIBUTING.md](https://github.com/Rifuroo/pact/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
 ---
 
