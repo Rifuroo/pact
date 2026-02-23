@@ -10,6 +10,8 @@
 
 ---
 
+![RYTE Demo](demo.gif)
+
 ## Introduction
 
 Writing meaningful commit messages and well-structured Pull Requests is critical for team collaboration, but it’s often a friction point in a fast-paced development cycle. 
