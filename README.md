@@ -2,6 +2,8 @@
 
 > **Write it right.** AI-powered Git workflow CLI for developers who care about clean history and velocity.
 
+*Turn messy git logs into structured, semantic history — instantly.*
+
 [![npm version](https://img.shields.io/npm/v/@riflo/ryte.svg?style=flat-square)](https://www.npmjs.com/package/@riflo/ryte)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Node Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg?style=flat-square)](https://nodejs.org)
@@ -71,7 +73,7 @@ With `ryte c`, it looks like this:
 **What RYTE writes:**
 > `feat(auth): implement JWT refresh token rotation via HTTP-only cookies`
 
-One command. Same diff. Zero manual thinking.
+One command. Same diff. Clean history.
 
 ---
 
@@ -221,7 +223,7 @@ We believe that **every commit should be written right**. A clean git history is
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Please see [CONTRIBUTING.md](https://github.com/Rifuroo/pact/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+Please see our [Contributing Guide](https://github.com/Rifuroo/ryte/blob/main/CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
 ---
 
