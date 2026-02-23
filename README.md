@@ -17,8 +17,29 @@ Writing meaningful commit messages and well-structured Pull Requests is critical
 ### Core Value
 - **Zero Friction**: Stay in the terminal. No Web UI, no heavy extensions.
 - **Semantic by Default**: Automatically follows [Conventional Commits](https://www.conventionalcommits.org/).
-- **Intelligent Context**: Infers motivation from diffs and branch names (e.g., JIRA/Linear tickets).
-- **Interactive Control**: You are always in charge with a simple `Accept/Edit/Regenerate` workflow.
+- **Intelligent Context**: Infers motivation from diffs and branch names.
+- **Interactive Control**: You are always in charge with an `Accept/Edit/Regenerate` workflow.
+
+---
+
+## ⚡ Quick Start
+
+### Installation
+```bash
+npm install -g pact-ai
+```
+
+### Setup API Key
+```bash
+# Get your free key at console.groq.com
+export GROQ_API_KEY="gsk_..."
+```
+
+### usage
+```bash
+git add .
+pact c
+```
 
 ---
 
@@ -110,14 +131,9 @@ We believe that **every commit is a pact** between you and your future self (and
 
 ---
 
-## Contributing
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Contributions are welcome! Whether it’s reporting a bug, suggesting a feature, or submitting a PR, your help is appreciated.
-
-1. Fork the repo.
-2. Create your feature branch.
-3. Commit your changes (using `pact c`, obviously).
-4. Push and open a PR.
+Please see [CONTRIBUTING.md](file:///d:/pact/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
 ---
 
