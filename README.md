@@ -12,7 +12,7 @@
 
 Writing meaningful commit messages and well-structured Pull Requests is critical for team collaboration, but it’s often a friction point in a fast-paced development cycle. 
 
-**ryte** is your CLI companion that bridge the gap between "coding" and "documenting". It reads your git diffs, understands the context of your changes, and generates professional, semantic-compliant messages in seconds.
+**ryte** is your CLI companion that **bridges** the gap between "coding" and "documenting". It reads your git diffs, understands the context of your changes, and generates professional, semantic-compliant messages in seconds.
 
 ### Core Value
 - **Zero Friction**: Stay in the terminal. No Web UI, no heavy extensions.
@@ -58,6 +58,18 @@ With `ryte c`, it looks like this:
 ✅  refactor(db): extract query builder to repository layer
 ✅  chore: update dependencies to remove security vulnerabilities
 ```
+
+### See the Magic
+
+**What RYTE sees (`git diff --staged`):**
+```diff
++ const refreshToken = generateToken(user.id)
++ await saveTokenToDB(refreshToken)
++ return res.cookie('refresh_token', refreshToken, { httpOnly: true })
+```
+
+**What RYTE writes:**
+> `feat(auth): implement JWT refresh token rotation via HTTP-only cookies`
 
 One command. Same diff. Zero manual thinking.
 
@@ -144,7 +156,8 @@ Fair question. Here's an honest comparison:
 | Free tier available | ❌ | ✅ (via Groq) |
 | BYOK (Bring Your Own Key) | ❌ | ✅ |
 
-Copilot is great for writing code. RYTE is for **documenting the intent** behind it.
+*Copilot helps you write code.*  
+**RYTE helps your future self understand it.**
 
 ---
 
@@ -168,7 +181,7 @@ We understand that sending code to an external API is a sensitive decision. Here
 
 ## Configuration
 
-**ryte** requires an API key to function. We support two providers:
+**ryte** requires an API key to function. We support high-performance LLM providers like Groq and OpenAI.
 
 ### Groq (Recommended - Free & Instant)
 Get your free key at [console.groq.com](https://console.groq.com/keys).

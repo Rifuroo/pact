@@ -128,14 +128,24 @@ async function main() {
         await handlePR();
     } else {
         console.log(`
-\x1b[36mRYTE - AI Git Workflow Assistant\x1b[0m
-Author: Riflo
+ \x1b[1;38;5;39m██████╗ \x1b[1;38;5;63m██╗   ██╗\x1b[1;38;5;129m████████╗\x1b[1;38;5;161m███████╗\x1b[0m
+ \x1b[1;38;5;39m██╔══██╗\x1b[1;38;5;63m╚██╗ ██╔╝\x1b[1;38;5;129m╚══██╔══╝\x1b[1;38;5;161m██╔════╝\x1b[0m
+ \x1b[1;38;5;39m██████╔╝\x1b[1;38;5;63m ╚████╔╝ \x1b[1;38;5;129m   ██║   \x1b[1;38;5;161m█████╗  \x1b[0m
+ \x1b[1;38;5;39m██╔══██╗\x1b[1;38;5;63m  ╚██╔╝  \x1b[1;38;5;129m   ██║   \x1b[1;38;5;161m██╔══╝  \x1b[0m
+ \x1b[1;38;5;39m██║  ██║\x1b[1;38;5;63m   ██║   \x1b[1;38;5;129m   ██║   \x1b[1;38;5;161m███████╗\x1b[0m
+ \x1b[1;38;5;39m╚═╝  ╚═╝\x1b[1;38;5;63m   ╚═╝   \x1b[1;38;5;129m   ╚═╝   \x1b[1;38;5;161m╚══════╝\x1b[0m
 
-Usage:
-  ryte c    Generate semantic commit from staged diff
-  ryte pr   Generate PR markdown description from branch commits
+  \x1b[90mAI-Powered Git Workflow Assistant\x1b[0m
+  \x1b[90mv1.0.4 | by Riflo\x1b[0m
 
-Set GROQ_API_KEY (Free) or OPENAI_API_KEY environment variable.
+  \x1b[33mCOMMANDS:\x1b[0m
+  \x1b[32mryte c\x1b[0m     Generate semantic commit from diff
+  \x1b[32mryte pr\x1b[0m    Generate PR markdown from branch commits
+
+  \x1b[33mGETTING STARTED:\x1b[0m
+  Set either environment variable to unleash the AI:
+  • \x1b[36mGROQ_API_KEY\x1b[0m   (Recommended / Free tier)
+  • \x1b[36mOPENAI_API_KEY\x1b[0m (OpenAI API key)
         `);
     }
 
