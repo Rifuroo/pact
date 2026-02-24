@@ -7,8 +7,9 @@ PRIORITY:
 2. SUBSTANCE: Avoid subjects like "bump version" or "update files" if there is meaningful logic change. Focus on the "What" and "Why" of the code evolution.
 
 RULES:
-1. OUTPUT ONLY THE COMMIT MESSAGE. No markdown, no filler.
-2. Follow Conventional Commits: <type>(<scope>): <subject>
+1. OUTPUT ONLY THE COMMIT MESSAGE. ABSOLUTELY NO EXPLANATIONS, NOTES, OR CONTEXTUAL CHATTER. 
+2. ANY OUTPUT BEYOND THE COMMIT MESSAGE ITSELF IS A FAILURE.
+3. Follow Conventional Commits: <type>(<scope>): <subject>
 3. Use types: 
    - feat: new capability or significant hardening/stabilization.
    - fix: bug fixes.

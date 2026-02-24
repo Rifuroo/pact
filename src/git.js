@@ -58,11 +58,18 @@ export function getBranchCommits(baseBranch = "main") {
     }
 }
 
+import fs from "fs";
+import os from "os";
+import path from "path";
+
 export function applyCommit(message) {
+    const tmpFile = path.join(os.tmpdir(), `ryte_commit_${Date.now()}.txt`);
     try {
-        // write message to a temp file or pass via -m safely
-        execSync(`git commit -m ${JSON.stringify(message)}`, { stdio: "inherit" });
+        fs.writeFileSync(tmpFile, message, "utf-8");
+        execSync(`git commit -F "${tmpFile}"`, { stdio: "inherit" });
+        fs.unlinkSync(tmpFile);
     } catch (e) {
-        console.error("Failed to commit.");
+        if (fs.existsSync(tmpFile)) fs.unlinkSync(tmpFile);
+        console.error("\n\x1b[31m✖ Failed to apply commit.\x1b[0m");
     }
 }

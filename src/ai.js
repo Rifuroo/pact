@@ -94,7 +94,7 @@ function parseAICommitMessage(text) {
     const match = header.match(/^(\w+)(?:\(([^)]+)\))?:\s*(.+)$/);
 
     return {
-        text: text, // The full raw text for legacy compatibility
+        text: text.replace(/\\n/g, '\n'), // The full raw text for legacy compatibility
         structured: {
             header: header,
             type: match ? match[1] : "other",

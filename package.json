@@ -1,6 +1,6 @@
 {
   "name": "@riflo/ryte",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "AI Git Workflow Assistant - Generate semantic commits and PRs",
   "main": "src/index.js",
   "bin": {
