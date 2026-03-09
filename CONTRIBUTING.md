@@ -1,6 +1,6 @@
-# Contributing to Pact-AI
+# Contributing to Ryte-AI
 
-First off, thank you for considering contributing to Pact-AI! It's people like you that make it a great tool.
+First off, thank you for considering contributing to Ryte-AI! It's people like you that make it a great tool.
 
 ## Code of Conduct
 
@@ -20,7 +20,7 @@ By participating in this project, you agree to abide by our Code of Conduct (sta
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/amazing-feature`).
 3. Make your changes.
-4. **Important**: Use `pact c` to commit your changes. This helps us maintain a clean, semantic history.
+4. **Important**: Use `ryte c` to commit your changes. This helps us maintain a clean, semantic history.
 5. Push to the branch (`git push origin feature/amazing-feature`).
 6. Open a Pull Request.
 
@@ -29,7 +29,7 @@ By participating in this project, you agree to abide by our Code of Conduct (sta
 1. Clone your fork.
 2. Install dependencies: `npm install`.
 3. Link the package for local testing: `npm link`.
-4. Run with `pact`.
+4. Run with `ryte`.
 
 ## Style Guide
 - Follow the [Conventional Commits](https://www.conventionalcommits.org/) specification.
